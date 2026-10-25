@@ -18,13 +18,20 @@
 
 ## 📌 Overview
 
-Host Security Auditor
+
+OVigilant is a continuous host and service monitoring tool that watches for changes in processes, ports, files and system state and raises alerts on anomalies. It takes periodic snapshots, diffs them against a baseline, and reports deviations for defensive awareness. It is intended for authorized endpoint and infrastructure monitoring.
 
 ---
 
 ## ✨ Features
 
-- Host security audit scanner across system, network, ports, users, processes and services
+
+- Periodic snapshots of processes, listening ports, files and system state
+- Baseline diffing to surface new, removed or changed items
+- Anomaly alerting on unexpected deviations
+- Configurable monitoring interval and watched resources
+- Structured log/export output for review and SIEM ingestion
+- Offline --self-test for safe verification
 
 ---
 
@@ -37,8 +44,11 @@ Host Security Auditor
 
 ## 🚀 Usage
 
+
 ```bash
 ./OVigilant
+./OVigilant --self-test
+./OVigilant --help
 ```
 
 ---
